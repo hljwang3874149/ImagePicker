@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="all_images">Album</string>
+    <string name="folder_image_count">%1$d</string>
+    <string name="preview_image_count">%1$s/%2$s</string>
+    <string name="select_limit">You can only select one photo</string>
+    <string name="complete">Done</string>
+    <string name="select_complete">Done(%1$s/%2$s)</string>
+    <string name="preview_count">Preview(%1$s)</string>
+    <string name="photo_crop">Crop</string>
+    <string name="origin">original</string>
+    <string name="origin_size">original(%1$s)</string>
+    <string name="take_photo">Take Picture</string>
+    <string name="chose">Photos</string>
+
+    <string name="camera_permission_hint_text_1">No access to camera</string>
+    <string name="image_not_found">Image is not found , Please try again</string>
+    <string name="image_original_not_found">The original image was not found</string>
+</resources>
