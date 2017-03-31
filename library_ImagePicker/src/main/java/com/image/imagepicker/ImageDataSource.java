@@ -11,6 +11,7 @@ import android.support.v4.content.Loader;
 import com.image.imagepicker.bean.ImageFolder;
 import com.image.imagepicker.bean.ImageItem;
 
+import com.image.imagepicker.utils.Utils;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
@@ -73,7 +74,10 @@ public class ImageDataSource implements LoaderManager.LoaderCallbacks<Cursor> {
         imageFolders.clear();
         if (data != null) {
             int count = data.getCount();
-            if (count <= 0) return;
+            if (count <= 0){
+                loadedListener.onImageNull();
+                return;
+            }
 
             ArrayList<ImageItem> allImages = new ArrayList<>();   //所有图片的集合,不分文件夹
             while (data.moveToNext()) {
@@ -135,5 +139,6 @@ public class ImageDataSource implements LoaderManager.LoaderCallbacks<Cursor> {
     /** 所有图片加载完成的回调接口 */
     public interface OnImagesLoadedListener {
         void onImagesLoaded(List<ImageFolder> imageFolders);
+        void onImageNull();
     }
 }

@@ -16,4 +16,5 @@
     <string name="camera_permission_hint_text_1">No access to camera</string>
     <string name="image_not_found">Image is not found , Please try again</string>
     <string name="image_original_not_found">The original image was not found</string>
+  <string name="image_none">未找到照片</string>
 </resources>
